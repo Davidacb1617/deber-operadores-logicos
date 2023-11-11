@@ -1,10 +1,8 @@
 'use strict'
-let no = new Boolean(false);
 let edad = Number(prompt("Ingrese su Edad"));
-let licencia_profesional = Boolean(prompt("¿Cuenta con una Licencia Profesional? "));
-alert(licencia_profesional);
+let licencia_profesional = confirm("¿Cuenta con una Licencia Profesional?");
 
-if((edad >=25) && (licencia_profesional==true)){
+if((edad >=25) && (licencia_profesional)){
     alert("Apto");
 }else{
     alert("No Apto");
